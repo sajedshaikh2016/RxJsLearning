@@ -1,0 +1,69 @@
+<div class="my-3">
+    <h2>Of and From</h2>
+
+    <strong> Example - 01 (OF) </strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Strings</strong>
+            <hr>
+            <p class="bg-light p-3 border rounded">
+                <strong>Data :</strong> of('Sajed', 'Salim', 'Shaikh')
+            </p>
+            <hr>
+            <ul id="element-container-1"></ul>
+        </div>
+
+        <div class="col-md-6">
+            <strong>Object</strong>
+            <hr>
+            <p class="bg-light p-3 border rounded">
+                <strong>Data :</strong> of(&#123; a: 'Sajed', b: 'Salim', c: 'Shaikh' &#125;)
+            </p>
+            <hr>
+            <ul id="element-container-2">
+                <li><strong>a :</strong> {{observableMessage.a}}</li>
+                <li><strong>b :</strong> {{observableMessage.b}}</li>
+                <li><strong>c :</strong> {{observableMessage.c}}</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <strong> Example - 02 (FROM) </strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Array</strong>
+            <hr>
+            <p class="bg-light p-3 border rounded">
+                <strong>Data :</strong> of(['Sajed', 'Salim', 'Shaikh'])
+            </p>
+            <hr>
+            <ul id="element-container-3"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <strong>Promise</strong>
+            <hr>
+            <p class="bg-light p-3 border rounded">
+                <strong>Data :</strong> Promise to Observable
+            </p>
+            <hr>
+            <ul id="element-container-4"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <strong>String</strong>
+            <hr>
+            <p class="bg-light p-3 border rounded">
+                <strong>Data :</strong> String to Observable
+            </p>
+            <hr>
+            <ul id="element-container-5"></ul>
+        </div>
+    </div>
+
+</div>
