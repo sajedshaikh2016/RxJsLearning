@@ -1,0 +1,32 @@
+ul.list {
+    list-style-type: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: calc(25% - 2rem);
+        margin: 1rem;
+        a {
+            background: #f8f8f8;
+            color: #6296bb;
+            border-radius: 0.5rem;
+            width: 100%;
+            text-align: center;
+            border: 0.1rem solid #6296bb;
+            transition: .3s ease all;
+            line-height: 1;
+            min-height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            &:hover{
+                background: #e3f2fd;
+                color: #477698;
+                box-shadow: 0 0 6rem #b3cada inset;
+                text-decoration: none;
+            }
+        }
+    }
+}
