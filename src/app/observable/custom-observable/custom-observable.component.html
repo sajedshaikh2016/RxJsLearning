@@ -1,0 +1,36 @@
+<div class="my-3">
+    <h2>Custom Observable</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <strong>Example 1 - Manual</strong>
+            <hr>
+            <ul class="technology-list" id="elementContainer1"
+                [ngClass]="(technologyStatus1 == 'completed') ? 'completed' : (technologyStatus1 == 'error') ? 'error'  : '' ">
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <strong>Example 1 - Custom Interval Observable</strong>
+            <hr>
+            <ul class="technology-list" id="elementContainer2"
+                [ngClass]="(technologyStatus2 == 'completed') ? 'completed' : (technologyStatus2 == 'error') ? 'error'  : '' ">
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <strong>Example 3 - Random Names</strong>
+            <hr>
+            <p class="bg-light p-3 border rounded">
+                <strong>Random Names :</strong> 'Sajed', 'Salim', 'Shaikh'
+            </p>
+            <hr>
+            <p>Current Name : <strong>{{names}}</strong></p>
+            <span class="badge rounded-pill"
+                [ngClass]="(namesStatus == 'completed') ? 'text-bg-success' : (namesStatus == 'error') ? 'text-bg-danger'  : 'text-bg-primary' ">
+                {{(namesStatus == 'completed') ? 'Success' : (namesStatus == 'error') ? 'Error' : 'Running'}}
+            </span>
+        </div>
+    </div>
+</div>
