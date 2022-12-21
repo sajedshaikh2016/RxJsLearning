@@ -18,11 +18,11 @@ export class PromiseComponent implements OnInit {
 
   public promiseMethod() {
     this.buyLaptop = new Promise((resolve, reject) => {
-      if (this.MacBookAirAvailble()) {
+      if (this.MacBookAirAvailable()) {
         return setTimeout(() => {
           resolve("MacBook Air is purchased.");
         }, 3000);
-      } else if (this.MacBookProAvailble()) {
+      } else if (this.MacBookProAvailable()) {
         return setTimeout(() => {
           resolve("MacBook Pro is purchased.");
         }, 3000);
@@ -42,11 +42,11 @@ export class PromiseComponent implements OnInit {
     });
   }
 
-  public MacBookAirAvailble() {
+  public MacBookAirAvailable() {
     return false;
   }
 
-  public MacBookProAvailble() {
+  public MacBookProAvailable() {
     return true;
   }
 
