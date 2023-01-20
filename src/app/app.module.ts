@@ -12,6 +12,10 @@ import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomObservableComponent } from './observable/custom-observable/custom-observable.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { Component1Component } from './components/component1/component1.component';
+import { Component2Component } from './components/component2/component2.component';
+import { Component3Component } from './components/component3/component3.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { CustomObservableComponent } from './observable/custom-observable/custom
     IntervalComponent,
     OfFromComponent,
     ToArrayComponent,
-    CustomObservableComponent
+    CustomObservableComponent,
+    SubjectComponent,
+    Component1Component,
+    Component2Component,
+    Component3Component
   ],
   imports: [
     BrowserModule,

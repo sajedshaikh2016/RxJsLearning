@@ -8,6 +8,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { PromiseComponent } from './promise/promise.component';
+import { SubjectComponent } from './observable/subject/subject.component';
 
 const routes: Routes = [
   { path: 'promise', component: PromiseComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
       { path: 'interval', component: IntervalComponent },
       { path: 'of-from', component: OfFromComponent },
       { path: 'to-array', component: ToArrayComponent },
-      { path: 'custom-observable', component: CustomObservableComponent }
+      { path: 'custom-observable', component: CustomObservableComponent },
+      { path: 'subject', component: SubjectComponent }
     ]
   },
   { path: '**', redirectTo: 'promise' }

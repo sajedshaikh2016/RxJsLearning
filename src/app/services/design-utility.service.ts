@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DesignUtilityService {
+
+  public exclusive = new Subject<boolean>();
+  public username = new BehaviorSubject<string>("Sajed");
 
   constructor() { }
 
@@ -18,4 +22,5 @@ export class DesignUtilityService {
       elementContainer?.appendChild(element);
     }
   }
+
 }
