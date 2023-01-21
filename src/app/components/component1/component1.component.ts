@@ -18,7 +18,6 @@ export class Component1Component {
 
   public onClick(inputusername: any) {
     this._designUtilityService.username.next(inputusername.value)
-
   }
 
 }
