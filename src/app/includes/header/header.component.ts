@@ -8,7 +8,7 @@ import { DesignUtilityService } from '../../services/design-utility.service';
 })
 export class HeaderComponent implements OnInit {
 
-  exclusive: boolean = false;
+  public exclusive: boolean = false;
 
   constructor(private _designUtilityService: DesignUtilityService) { }
 
